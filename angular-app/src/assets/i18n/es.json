@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "Tienda de Joyería",
+    "language": "Idioma"
+  },
+  "home": {
+    "subtitle": "Colección 2026",
+    "heading": "Joyería con carácter",
+    "description": "La nueva interfaz de Angular 19 crea la base para catálogo, carrito y perfil.",
+    "cta": "Ver catálogo"
+  }
+}

@@ -1,0 +1,52 @@
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero {
+  margin-top: 56px;
+  padding: 32px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(35, 31, 32, 0.08);
+}
+
+.lead {
+  color: #8f6a59;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+h2 {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 36px;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  background: #231f20;
+  color: #fff;
+  padding: 12px 16px;
+  cursor: pointer;
+}
