@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { CurrencyPipe, NgFor } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
+import { CartService } from '../services/cart.service';
+
 interface CatalogItem {
   nameKey: string;
   materialKey: string;
@@ -25,4 +27,10 @@ export class CatalogComponent {
     { nameKey: 'catalog.products.minimalBracelet.name', materialKey: 'catalog.products.minimalBracelet.material', price: 140, isNew: true },
     { nameKey: 'catalog.products.silverNecklace.name', materialKey: 'catalog.products.silverNecklace.material', price: 160, isNew: false }
   ];
+
+  constructor(private readonly cartService: CartService) {}
+
+  addToCart(): void {
+    this.cartService.addItem();
+  }
 }

@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { NgFor } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
+import { CartService } from './services/cart.service';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -18,9 +20,14 @@ export class AppComponent {
     { code: 'es', label: 'Español' }
   ];
 
+  readonly cartCount = this.cartService.count;
+
   selectedLanguage = 'ru';
 
-  constructor(private readonly translateService: TranslateService) {
+  constructor(
+    private readonly translateService: TranslateService,
+    private readonly cartService: CartService
+  ) {
     this.translateService.addLangs(this.languages.map((language) => language.code));
     this.translateService.setDefaultLang(this.selectedLanguage);
     this.translateService.use(this.selectedLanguage);

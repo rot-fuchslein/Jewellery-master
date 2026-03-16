@@ -64,5 +64,8 @@
     "submit": "Entrar",
     "registerPrompt": "¿No tienes cuenta?",
     "registerLink": "Regístrate"
+  },
+  "cart": {
+    "label": "Carrito"
   }
 }

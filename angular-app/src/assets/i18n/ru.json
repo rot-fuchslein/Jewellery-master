@@ -64,5 +64,8 @@
     "submit": "Войти",
     "registerPrompt": "Нет аккаунта?",
     "registerLink": "Зарегистрироваться"
+  },
+  "cart": {
+    "label": "Корзина"
   }
 }

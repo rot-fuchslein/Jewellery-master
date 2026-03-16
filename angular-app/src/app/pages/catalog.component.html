@@ -18,7 +18,7 @@
       <h3>{{ item.nameKey | translate }}</h3>
       <p>{{ item.materialKey | translate }}</p>
       <p class="price">{{ item.price | currency : 'USD' : 'symbol' : '1.0-0' }}</p>
-      <button type="button">{{ 'catalog.actions.addToCart' | translate }}</button>
+      <button type="button" (click)="addToCart()">{{ 'catalog.actions.addToCart' | translate }}</button>
     </article>
   </section>
 </div>

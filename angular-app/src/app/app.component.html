@@ -7,12 +7,19 @@
     <a routerLink="/login" routerLinkActive="active">{{ 'nav.login' | translate }}</a>
   </nav>
 
-  <label class="lang-switcher">
-    <span>{{ 'app.language' | translate }}</span>
-    <select [(ngModel)]="selectedLanguage" (ngModelChange)="changeLanguage($event)">
-      <option *ngFor="let language of languages" [value]="language.code">{{ language.label }}</option>
-    </select>
-  </label>
+  <div class="toolbar">
+    <a class="cart-link" routerLink="/catalog">
+      {{ 'cart.label' | translate }}
+      <span class="cart-badge">{{ cartCount() }}</span>
+    </a>
+
+    <label class="lang-switcher">
+      <span>{{ 'app.language' | translate }}</span>
+      <select [(ngModel)]="selectedLanguage" (ngModelChange)="changeLanguage($event)">
+        <option *ngFor="let language of languages" [value]="language.code">{{ language.label }}</option>
+      </select>
+    </label>
+  </div>
 </header>
 
 <main class="content">
