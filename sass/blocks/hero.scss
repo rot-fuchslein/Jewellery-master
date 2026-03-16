@@ -1,0 +1,334 @@
+.hero {
+  background-color: $primary-golden-bg;
+  text-align: center;
+  color: $white-text;
+  background-image: url("../img/hero-main/hero-dsk@1x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/hero-main/hero-dsk@2x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @include media-tablet {
+    background-image: url("../img/hero-main/hero-tablet@1x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/hero-main/hero-tablet@2x.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include media-mobile {
+    background-image: url("../img/hero-main/hero-mobile@1x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/hero-main/hero-mobile@2x.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.hero h1 {
+  @include reset-text-slyle;
+  text-transform: uppercase;
+}
+
+.hero p {
+  @include reset-text-slyle;
+  font-family: $f-accent-regular;
+  font-style: $font-style-italic;
+  $font-weight-normal: normal;
+}
+
+.hero--main {
+  @include media-desktop {
+    padding: 182px 0;
+  }
+
+  @include media-tablet {
+    padding: 182px 0;
+  }
+
+  @include media-mobile {
+    padding: 189px 0 186px;
+  }
+}
+
+.hero--main h1 {
+  @include big-accent-text;
+  font-size: 45px;
+  letter-spacing: 0.03em;
+
+  @include media-tablet {
+    margin-left: -15px;
+  }
+
+  @include media-mobile {
+    font-size: 38px;
+    line-height: 49px;
+  }
+}
+
+.hero--main p {
+  font-size: 38px;
+  line-height: 49px;
+  font-weight: $font-weight-normal;
+  margin-top: -5px;
+
+  @include media-tablet {
+    margin-left: -15px;
+  }
+
+  @include media-mobile {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}
+
+.no-webp .hero--main {
+  background-image: url("../img/hero-main/hero-dsk@1x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/hero-main/hero-dsk@2x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @include media-tablet {
+    background-image: url("../img/hero-main/hero-tablet@1x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/hero-main/hero-tablet@2x.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include media-mobile {
+    background-image: url("../img/hero-main/hero-mobile@1x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/hero-main/hero-mobile@2x.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.webp .hero--main {
+  background-image: url("../img/hero-main/hero-dsk@1x.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/hero-main/hero-dsk@2x.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @include media-tablet {
+    background-image: url("../img/hero-main/hero-tablet@1x.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/hero-main/hero-tablet@2x.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include media-mobile {
+    background-image: url("../img/hero-main/hero-mobile@1x.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/hero-main/hero-mobile@2x.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.hero--catalog {
+  background-image: url("../img/hero-catalog/hero-catalog-dsk@1x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/hero-catalog/hero-catalog-dsk@2x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @include media-tablet {
+    background-image: url("../img/hero-catalog/hero-catalog-tablet@1x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/hero-catalog/hero-catalog-tablet@2x.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include media-mobile {
+    background-image: url("../img/hero-catalog/hero-catalog-mobile@1x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/hero-catalog/hero-catalog-mobile@2x.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include media-desktop {
+    padding: 92px 0 94px;
+  }
+
+  @include media-tablet {
+    padding: 92px 0 94px;
+  }
+
+  @include media-mobile {
+    padding: 79px 0;
+  }
+}
+
+.hero--catalog h1 {
+  @include section-titles;
+  line-height: 44px;
+}
+
+.hero--catalog p {
+  font-size: 22px;
+  line-height: 29px;
+  margin-top: 1px;
+}
+
+.no-webp .hero--catalog {
+  background-image: url("../img/hero-catalog/hero-catalog-dsk@1x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/hero-catalog/hero-catalog-dsk@2x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @include media-tablet {
+    background-image: url("../img/hero-catalog/hero-catalog-tablet@1x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/hero-catalog/hero-catalog-tablet@2x.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include media-mobile {
+    background-image: url("../img/hero-catalog/hero-catalog-mobile@1x.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/hero-catalog/hero-catalog-mobile@2x.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.webp .hero--catalog {
+  background-image: url("../img/hero-catalog/hero-catalog-dsk@1x.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/hero-catalog/hero-catalog-dsk@2x.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @include media-tablet {
+    background-image: url("../img/hero-catalog/hero-catalog-tablet@1x.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/hero-catalog/hero-catalog-tablet@2x.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include media-mobile {
+    background-image: url("../img/hero-catalog/hero-catalog-mobile@1x.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/hero-catalog/hero-catalog-mobile@2x.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

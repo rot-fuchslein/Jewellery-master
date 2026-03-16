@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Chjewellery shop: alluring and sparkling jewellery ecommerce store. Perfection - made to be yours"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favicons/favicon.ico" sizes="16x16 32x32" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="./img/favicons/safari-pinned-tab.svg"
+      color="#0f0f0f"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="preload" href="./fonts/poppins-medium.woff2" as="font" />
+    <title>Jewellery</title>
+  </head>
+  <body>
+    <!-- Класс header--no-js: реализация работы сайта без  включенного js (меню открыто, кнопка переключения меню неактивна)
+    header--opened: реализация открытия/закрытия меню при подключенном js -->
+    <header class="header header--no-js">
+      <div class="wrapper">
+        <div class="header__head">
+          <button class="header__button header__button--toggle button" disabled>
+            <svg
+              width="25"
+              height="16"
+              viewbox="0 0 25 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use xlink:href="./img/sprite_auto.svg#burger-icon"></use>
+            </svg>
+          </button>
+
+          <form
+            class="header__search-form search-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <label aria-label="Search field">
+              <svg
+                width="14"
+                height="14"
+                viewbox="0 0 14 14"
+                fill="none"
+                class="search-form__icon"
+              >
+                <use xlink:href="./img/sprite_auto.svg#search-icon"></use>
+              </svg>
+              <input
+                type="search"
+                name="earch"
+                id="search"
+                placeholder="Type here to search"
+              />
+            </label>
+          </form>
+          <a class="header__logo" href="main.html">
+            <svg
+              width="66"
+              height="66"
+              viewbox="0 0 66 66"
+              fill="none"
+              class="header__logo-img"
+            >
+              <use xlink:href="./img/sprite_auto.svg#logo-icon"></use>
+            </svg>
+          </a>
+
+          <div class="header__user-links">
+            <a href="login.html" class="header__login">Login</a>
+            <a href="#" class="header__cart"
+              ><span>Cart </span><span id="header__counter">0</span>
+              <svg
+                width="20"
+                height="18"
+                viewbox="0 0 20 18"
+                fill="none"
+                class="header__cart-icon"
+              >
+                <use xlink:href="./img/sprite_auto.svg#cart-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="main.html">Main</a>
+            </li>
+            <li class="nav__item">
+              <a href="catalog.html">Catalog</a>
+            </li>
+            <li class="nav__item">
+              <a href="login.html">Login</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__add-info add-info">
+          <ul class="add-info__list">
+            <li class="add-info__item">
+              <a href="#">About CH</a>
+            </li>
+            <li class="add-info__item">
+              <a href="#">Stores &amp; Hours</a>
+            </li>
+            <li class="add-info__item">
+              <a href="#">Contact Us</a>
+            </li>
+            <li class="add-info__item">
+              <a href="login.html" class="header__login">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__subscription subscription">
+          <h2>The good stuff in your inbox</h2>
+          <p>News and updates from CH. No spam, we promise.</p>
+
+          <form
+            method="post"
+            class="subscription__form"
+            action="https://echo.htmlacademy.ru"
+          >
+            <label aria-label="Your email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your E-mail"
+                autocomplete="off"
+              />
+            </label>
+            <button type="submit" class="subscription__button button">
+              Sign Up
+              <svg
+                width="30"
+                height="11"
+                viewbox="0 0 30 11"
+                fill="none"
+                class="subscription__icon"
+              >
+                <use
+                  xlink:href="./img/sprite_auto.svg#arr-short-right-icon"
+                ></use>
+              </svg>
+            </button>
+          </form>
+          <p id="error-message">Please, enter correct email</p>
+        </div>
+
+        <div class="footer__links links">
+          <ul class="links__orders">
+            <li class="links__link">
+              <a href="#">Ordering &amp; Payment</a>
+            </li>
+            <li class="links__link">
+              <a href="#">Terms &amp; Conditions</a>
+            </li>
+            <li class="links__link">
+              <a href="#">Returns &amp; Exchanges</a>
+            </li>
+            <li class="links__link">
+              <a href="#">Delivery</a>
+            </li>
+          </ul>
+
+          <ul class="links__company-links">
+            <li class="links__company-link">
+              <a href="#">About CH</a>
+            </li>
+            <li class="links__company-link">
+              <a href="#">Stores &amp; Hours</a>
+            </li>
+            <li class="links__company-link">
+              <a href="#">Jobs</a>
+            </li>
+            <li class="links__company-link">
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="links__social-links">
+            <li class="links__social-link">
+              <a href="#"
+                ><span>Facebook</span>
+                <svg
+                  width="8"
+                  height="15"
+                  viewbox="0 0 8 15"
+                  fill="none"
+                  class="links__siocial-icon"
+                >
+                  <use xlink:href="./img/sprite_auto.svg#fb-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="links__social-link">
+              <a href="#"
+                ><span>Instagram</span>
+                <svg
+                  width="15"
+                  height="15"
+                  viewbox="0 0 15 15"
+                  fill="none"
+                  class="links__siocial-icon"
+                >
+                  <use xlink:href="./img/sprite_auto.svg#inst-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="links__social-link">
+              <a href="#"
+                ><span>Pinterest</span>
+                <svg
+                  width="16"
+                  height="15"
+                  viewbox="0 0 16 15"
+                  fill="none"
+                  class="links__siocial-icon"
+                >
+                  <use xlink:href="./img/sprite_auto.svg#pinterest-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="links__social-link">
+              <a href="#"
+                ><span>Twitter</span>
+                <svg
+                  width="15"
+                  height="13"
+                  viewbox="0 0 15 13"
+                  fill="none"
+                  class="links__siocial-icon"
+                >
+                  <use xlink:href="./img/sprite_auto.svg#twitter-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Класс popup--no-js: реализация работы сайта без  включенного js (переход на отдельную страницу с логином)
+    visually-hidden + popup--no-js: реализация открытия/закрытия пункта при подключенном js -->
+
+    <div class="popup visually-hidden popup--no-js">
+      <form
+        method="GET"
+        class="popup__form form"
+        action="https://echo.htmlacademy.ru"
+      >
+        <button
+          class="form__button button form__button--close"
+          aria-label="Close form"
+        ></button>
+        <h2>Log In</h2>
+
+        <fieldset>
+          <div class="form__field">
+            <label aria-label="Your email"
+              ><input
+                id="user-email"
+                type="email"
+                name="user-email"
+                placeholder="Your E-mail"
+                required
+            /></label>
+          </div>
+
+          <div class="form__field">
+            <label aria-label="Your password"
+              ><input
+                id="user-password"
+                type="password"
+                name="user-password"
+                placeholder="Password"
+                required
+            /></label>
+
+            <a href="#">Forgot your password?</a>
+          </div>
+        </fieldset>
+
+        <button class="form__button button form__button--login">Log In</button>
+        <p>Don’t have an account? <a href="#">Sign up</a></p>
+      </form>
+    </div>
+
+    <script src="./js/vendor.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

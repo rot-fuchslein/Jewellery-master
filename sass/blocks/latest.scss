@@ -1,0 +1,92 @@
+.latest {
+  position: relative;
+  margin-top: 121px;
+  text-align: center;
+
+  @include media-tablet {
+    margin-top: 71px;
+  }
+
+  @include media-mobile {
+    margin-top: 60px;
+  }
+}
+
+.latest a {
+  @include reset-style-link;
+}
+
+.latest h2 {
+  @include reset-text-slyle;
+  @include section-titles;
+  line-height: 44px;
+  margin-bottom: 21px;
+
+  @include tablet-mobile {
+    margin-bottom: 18px;
+  }
+}
+
+.latest__button {
+  position: absolute;
+  width: 100%;
+  height: 13px;
+
+  @include media-desktop {
+    top: 42px;
+    width: 38px;
+    height: 13px;
+  }
+
+  @include media-tablet {
+    top: 40px;
+    width: 50px;
+    height: 17px;
+  }
+
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.latest__button:hover {
+  transform: scale(1.1);
+}
+
+.latest__button:active {
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+
+.latest__button--prev {
+  position: absolute;
+  left: 0;
+  background-image: url("../img/svg/arr-long-left-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include media-desktop {
+    left: 14px;
+  }
+
+  @include media-tablet {
+    left: 43px;
+  }
+}
+
+.latest__button--next {
+  position: absolute;
+  right: 0;
+  background-image: url("../img/svg/arr-long-right-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  @include media-desktop {
+    right: 14px;
+  }
+
+  @include media-tablet {
+    right: 43px;
+  }
+}

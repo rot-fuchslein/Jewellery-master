@@ -1,0 +1,139 @@
+.subscription {
+  @include media-desktop {
+    width: 42.74%;
+  }
+
+  @include media-tablet {
+    width: 82.92%;
+  }
+
+  @include media-mobile {
+    width: 100%;
+    max-width: 570px;
+  }
+}
+
+.subscription h2 {
+  @include reset-text-slyle;
+  @include section-titles;
+  letter-spacing: 0.03em;
+  line-height: 44px;
+  margin-bottom: 6px;
+
+  @include media-mobile {
+    max-width: 75%;
+    margin-bottom: 10px;
+  }
+}
+
+.subscription p {
+  @include reset-text-slyle;
+  @include regular-text-average;
+  color: $light-grey-text;
+
+  @include media-mobile {
+    max-width: 80%;
+  }
+}
+
+.subscription__form {
+  position: relative;
+
+  @include media-desktop {
+    margin-top: 28px;
+  }
+
+  @include media-tablet {
+    margin-top: 27px;
+  }
+
+  @include media-mobile {
+    margin-top: 22px;
+  }
+}
+
+.subscription input {
+  @include small-plain-text;
+  line-height: 21px;
+  display: flex;
+  width: 70%;
+  padding: 15px 10px 9px 0;
+  border: none;
+  background-color: transparent;
+  color: $white-text;
+  border-bottom: 1px solid $border-white-color;
+  transition: $basic-transition;
+  appearance: none;
+
+  @include media-mobile {
+    width: 63%;
+  }
+}
+
+.subscription input:focus {
+  background-color: transparent;
+  color: $white-text;
+  border: 1px solid $primary-golden-bg;
+  outline: none;
+  border-radius: 10px;
+}
+
+.subscription input::placeholder {
+  @include small-plain-text;
+  line-height: 21px;
+  color: $light-grey-text;
+  transition: $basic-transition;
+}
+
+.subscription input:hover {
+  cursor: pointer;
+}
+
+.subscription input:hover::placeholder {
+  color: $white-text;
+}
+
+.subscription__button {
+  @include medium-text-average;
+  line-height: 21px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%;
+  color: $white-text;
+  padding: 13px 0 10px;
+  border: 0;
+  transition: $basic-transition;
+  border-bottom: 1px solid $border-white-color;
+  text-align: right;
+
+  @include media-tablet {
+    padding: 15px 0 9px;
+  }
+
+  @include media-mobile {
+    width: 37%;
+    padding: 13px 0 11px;
+  }
+}
+
+.subscription__button svg {
+  stroke: $currentColor;
+  margin-left: 8px;
+}
+
+.subscription__button:hover {
+  color: $golden-text;
+}
+
+.subscription__button:active {
+  color: $golden-text;
+  opacity: 0.7;
+}
+
+.footer__subscription p:last-of-type {
+  display: none;
+  position: absolute;
+  color: $error-color;
+}

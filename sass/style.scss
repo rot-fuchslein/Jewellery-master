@@ -1,0 +1,39 @@
+//Common
+@import "fonts";
+@import "mixins";
+@import "vars";
+@import "global";
+@import "wrapper";
+
+// Header
+@import "blocks/button.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/add-info.scss";
+@import "blocks/search-form.scss";
+
+// Footer
+@import "blocks/footer.scss";
+@import "blocks/links.scss";
+@import "blocks/subscription.scss";
+
+// Index
+@import "blocks/latest.scss";
+@import "blocks/slider.scss";
+@import "blocks/blog.scss";
+@import "blocks/faq.scss";
+@import "blocks/follow.scss";
+@import "blocks/swiper.scss";
+
+// Catalog
+@import "blocks/catalog.scss";
+@import "blocks/filter.scss";
+@import "blocks/results.scss";
+
+// Login
+@import "blocks/login.scss";
+
+// Common
+@import "blocks/hero.scss";
+@import "blocks/section.scss";
+@import "blocks/popup.scss";

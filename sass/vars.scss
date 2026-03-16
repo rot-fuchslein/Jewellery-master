@@ -1,0 +1,66 @@
+$white: #ffffff;
+$dark-grey: #1d1613;
+$light-grey: #9b9997;
+$basic-golden: #a87b62;
+$basic-golden-shadow: rgba(168, 122, 98, 0.24);
+$second-golden-shadow: rgba(168, 122, 98, 0.71);
+$partial-opacity-white: rgba(255, 255, 255, 0.75);
+$basic-black: #000000;
+$basic-beige: #f0eae4;
+$special-light-grey: #f6f5f4;
+$currentColor: currentColor;
+$error-color: hsl(0, 92%, 33%);
+
+/* Text colors */
+$black-text: $basic-black;
+$white-text: $white;
+$partial-opacity-white-text: $partial-opacity-white;
+$dark-grey-text: $dark-grey;
+$light-grey-text: $light-grey;
+$golden-text: $basic-golden;
+
+/* BG colors */
+$primary-white-bg: $white;
+$primary-black-bg: $basic-black;
+$primary-beige-bg: $basic-beige;
+$primary-white-color: $white;
+$primary-golden-bg: $basic-golden;
+$border-grey-color: $special-light-grey;
+$border-white-color: $white;
+$border-golden-color: $basic-golden;
+$dark-grey-border: $dark-grey;
+
+/*Fonts*/
+$main-f: "poppins-medium", "Arial", "Helvetica", sans-serif;
+$plain-text-f: "poppins-regular", "Arial", "Helvetica", sans-serif;
+$f-bold: "poppins-bold", "Arial", "Helvetica", sans-serif;
+$f-accent-regular: "cormorantgaramond-regular", "Arial", "Helvetica", sans-serif;
+$f-accent-semi-bold: "cormorantgaramond-semibold", "Arial", "Helvetica",
+  sans-serif;
+$f-accent-bold: "cormorantgaramond-bold", "Arial", "Helvetica", sans-serif;
+
+/* Font weight */
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/* Font style */
+$font-style-normal: normal;
+$font-style-italic: italic;
+
+/* Font size */
+$small-dsk-fs: 14px;
+
+/* Sizes and breakpoints*/
+$phones-min: 320px;
+$phones-max: 767px;
+$tablets-min: 768px;
+$tablets-max: 1023px;
+$desktops: 1024px;
+
+/* Retina */
+$resolution2x: 2dppx;
+
+/* Retina */
+$basic-transition: all 0.2s;

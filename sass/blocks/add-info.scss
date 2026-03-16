@@ -1,0 +1,126 @@
+.add-info {
+  display: none;
+}
+
+@include tablet-mobile {
+  .header--no-js .add-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .header--no-js .add-info__list {
+    @include reset-list-slyle;
+    width: 100%;
+    font-size: 18px;
+    line-height: 23px;
+    color: $partial-opacity-white-text;
+  }
+
+  .header--no-js .add-info__item {
+    margin-bottom: 30px;
+    transition: $basic-transition;
+  }
+
+  .header--no-js a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .header--no-js .add-info__item:last-of-type {
+    margin-top: 55px;
+  }
+
+  .header--no-js .add-info__item:hover {
+    color: $white-text;
+  }
+
+  .header--no-js .add-info__item:active {
+    color: $light-grey-text;
+  }
+
+  .header--opened .add-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .header--opened .add-info__list {
+    @include reset-list-slyle;
+    width: 100%;
+    font-size: 18px;
+    line-height: 23px;
+    color: $partial-opacity-white-text;
+  }
+
+  .header--opened .add-info__item {
+    margin-bottom: 20px;
+    transition: $basic-transition;
+    width: 100%;
+  }
+
+  .header--opened a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .header--opened .add-info__item:hover {
+    color: $white-text;
+  }
+
+  .header--opened .add-info__item:active {
+    color: $light-grey-text;
+  }
+}
+
+@include media-tablet {
+  .header--no-js .add-info {
+    margin-top: 25px;
+  }
+
+  .header--no-js .add-info__item:last-of-type {
+    margin-top: 45px;
+  }
+
+  .header--no-js .add-info__item {
+    margin-bottom: 20px;
+  }
+
+  .header--opened .add-info {
+    margin-top: 23px;
+  }
+
+  .header--opened .add-info__item:last-of-type {
+    margin-top: 45px;
+  }
+}
+
+@include media-mobile {
+  .header--no-js .add-info {
+    margin-top: 13px;
+  }
+
+  .header--no-js .add-info__item {
+    margin-bottom: 20px;
+  }
+
+  .header--no-js .add-info__item:last-of-type {
+    margin-top: 35px;
+  }
+
+  .header--opened .add-info {
+    margin-top: 13px;
+  }
+
+  .header--opened .add-info__item:last-of-type {
+    margin-top: 35px;
+  }
+}

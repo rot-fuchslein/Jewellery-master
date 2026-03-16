@@ -1,0 +1,31 @@
+.popup {
+  position: fixed;
+  display: block;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $primary-white-bg;
+  padding: 20px;
+  z-index: 99;
+}
+
+.popup .popup__form {
+  position: relative;
+
+  @include media-desktop {
+    margin: 80px auto 0;
+  }
+
+  @include media-tablet {
+    margin: 60px auto 0;
+    padding: 194px 45px 54px;
+  }
+
+  @include media-mobile {
+    margin: 30px auto 0;
+  }
+}

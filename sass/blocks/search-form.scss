@@ -1,0 +1,124 @@
+.search-form {
+  position: relative;
+  color: $basic-black;
+
+  @include tablet-mobile {
+    display: none;
+  }
+}
+
+.search-form svg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  fill: currentColor;
+}
+
+.search-form input {
+  @include small-plain-text;
+  line-height: 21px;
+  display: flex;
+  width: 100%;
+  padding: 12px 10px 15px 30px;
+  border: none;
+  color: $black-text;
+  appearance: none;
+}
+
+.search-form input:focus {
+  border: 2px solid $border-golden-color;
+  outline: none;
+  border-radius: 30px;
+}
+
+.search-form input:hover {
+  cursor: pointer;
+}
+
+.search-form:hover {
+  color: $primary-golden-bg;
+}
+
+.search-form input:hover::placeholder {
+  color: $black-text;
+}
+
+.search-form input::placeholder {
+  @include small-plain-text;
+  line-height: 21px;
+  color: $light-grey-text;
+}
+
+@include tablet-mobile {
+  .header--no-js .search-form {
+    order: 1;
+    display: block;
+    width: 100%;
+    grid-column: 1/4;
+    color: $white-text;
+  }
+
+  .header--no-js input {
+    display: flex;
+    padding: 6px 10px 13px 30px;
+
+    color: $white-text;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 21px;
+    width: 100%;
+  }
+
+  .header--no-js input::placeholder {
+    opacity: 0;
+  }
+
+  .header--no-js .search-form__icon {
+    left: 12px;
+  }
+
+  .header--opened .search-form {
+    order: 1;
+    display: block;
+    width: 100%;
+    grid-column: 1/4;
+    color: $white-text;
+  }
+
+  .header--opened input {
+    display: flex;
+    color: $white-text;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 21px;
+    width: 100%;
+    padding: 6px 10px 13px 30px;
+  }
+
+  .header--opened input::placeholder {
+    opacity: 0;
+  }
+
+  .header--opened .search-form__icon {
+    left: 12px;
+  }
+}
+
+@include media-tablet {
+  .header--opened .search-form {
+    margin-top: 39px;
+  }
+
+  .header--no-js .search-form {
+    margin-top: 39px;
+  }
+}
+
+@include media-mobile {
+  .header--no-js .search-form {
+    margin-top: 29px;
+  }
+
+  .header--opened .search-form {
+    margin-top: 29px;
+  }
+}

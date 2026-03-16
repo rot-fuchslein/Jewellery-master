@@ -1,0 +1,94 @@
+@mixin media-desktop {
+  @media (min-width: $desktops) {
+    @content;
+  }
+}
+
+@mixin tablet-mobile {
+  @media (min-width: $phones-min) and (max-width: $tablets-max) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (min-width: $tablets-min) and (max-width: $tablets-max) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (min-width: $phones-min) and (max-width: $phones-max) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: $resolution2x) {
+    @content;
+  }
+}
+
+@mixin reset-style-link {
+  font-family: inherit;
+  color: $currentColor;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+@mixin reset-list-slyle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-text-slyle {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-style-button {
+  display: block;
+  text-align: center;
+  border: none;
+  appearance: none;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+@mixin font(
+  $fontFamily: $main-f,
+  $fontSize: 16px,
+  $fontWeight: $font-weight-normal,
+  $fontStyle: normal
+) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  font-style: $fontStyle;
+}
+
+@mixin section-titles {
+  @include font($f-accent-bold, 34px, $font-weight-bold, normal);
+}
+
+@mixin big-accent-text {
+  @include font($f-accent-bold, 45px, $font-weight-bold, normal);
+}
+
+@mixin medium-text-average {
+  @include font($main-f, 16px, $font-weight-medium, normal);
+}
+
+@mixin regular-text-average {
+  @include font($plain-text-f, 16px, $font-weight-normal, normal);
+}
+
+@mixin small-plain-text {
+  @include font($main-f, 14px, $font-weight-medium, normal);
+}
+
+@mixin small-bold-text {
+  @include font($f-bold, 14px, $font-weight-bold, normal);
+}

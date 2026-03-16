@@ -1,0 +1,35 @@
+.section h2:first-of-type ~ a {
+  position: relative;
+  color: $dark-grey-text;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $border-golden-color;
+    left: 0;
+    bottom: 1px;
+
+    @include media-tablet {
+      bottom: -3px;
+    }
+
+    @include media-mobile {
+      bottom: -2px;
+    }
+  }
+}
+
+.section h2:first-of-type ~ a:hover {
+  color: $golden-text;
+}
+
+.section h2:first-of-type ~ a:active {
+  color: $light-grey-text;
+  transform: scale(0.9);
+
+  &::after {
+    display: none;
+  }
+}
