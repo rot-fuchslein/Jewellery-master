@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "Jewellery Store",
+    "language": "Language"
+  },
+  "home": {
+    "subtitle": "Collection 2026",
+    "heading": "Jewellery with character",
+    "description": "The new Angular 19 UI creates a foundation for catalog, cart, and account features.",
+    "cta": "Browse catalog"
+  }
+}

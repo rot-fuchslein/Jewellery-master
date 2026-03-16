@@ -1,0 +1,21 @@
+<main class="page">
+  <header class="topbar">
+    <h1>{{ 'app.title' | translate }}</h1>
+
+    <label class="lang-switcher">
+      <span>{{ 'app.language' | translate }}</span>
+      <select [(ngModel)]="selectedLanguage" (ngModelChange)="changeLanguage($event)">
+        <option *ngFor="let language of languages" [value]="language.code">
+          {{ language.label }}
+        </option>
+      </select>
+    </label>
+  </header>
+
+  <section class="hero">
+    <p class="lead">{{ 'home.subtitle' | translate }}</p>
+    <h2>{{ 'home.heading' | translate }}</h2>
+    <p>{{ 'home.description' | translate }}</p>
+    <button type="button">{{ 'home.cta' | translate }}</button>
+  </section>
+</main>
