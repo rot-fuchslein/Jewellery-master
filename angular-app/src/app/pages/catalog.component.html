@@ -1,0 +1,9 @@
+<section class="page-card">
+  <p class="kicker">{{ 'catalog.subtitle' | translate }}</p>
+  <h1>{{ 'catalog.heading' | translate }}</h1>
+  <p>{{ 'catalog.description' | translate }}</p>
+
+  <ul>
+    <li *ngFor="let item of demoItems">{{ item | translate }}</li>
+  </ul>
+</section>

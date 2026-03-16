@@ -1,0 +1,34 @@
+{
+  "app": {
+    "title": "Jewellery Store",
+    "language": "Language"
+  },
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "login": "Login"
+  },
+  "home": {
+    "subtitle": "Collection 2026",
+    "heading": "Jewellery with character",
+    "description": "Base Angular app page for porting content from the legacy markup.",
+    "cta": "Browse catalog"
+  },
+  "catalog": {
+    "subtitle": "Product section",
+    "heading": "Jewellery catalog",
+    "description": "This is a starter catalog page. Next we will add filters, cards and pagination.",
+    "items": {
+      "ring": "Rings",
+      "earrings": "Earrings",
+      "bracelet": "Bracelets"
+    }
+  },
+  "login": {
+    "subtitle": "Account area",
+    "heading": "Sign in",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in"
+  }
+}

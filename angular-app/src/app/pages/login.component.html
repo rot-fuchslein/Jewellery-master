@@ -1,0 +1,18 @@
+<section class="page-card">
+  <p class="kicker">{{ 'login.subtitle' | translate }}</p>
+  <h1>{{ 'login.heading' | translate }}</h1>
+
+  <form class="form">
+    <label>
+      <span>{{ 'login.email' | translate }}</span>
+      <input type="email" [(ngModel)]="email" name="email" />
+    </label>
+
+    <label>
+      <span>{{ 'login.password' | translate }}</span>
+      <input type="password" [(ngModel)]="password" name="password" />
+    </label>
+
+    <button type="submit">{{ 'login.submit' | translate }}</button>
+  </form>
+</section>

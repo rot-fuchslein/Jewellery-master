@@ -1,0 +1,34 @@
+{
+  "app": {
+    "title": "Tienda de Joyería",
+    "language": "Idioma"
+  },
+  "nav": {
+    "home": "Inicio",
+    "catalog": "Catálogo",
+    "login": "Acceso"
+  },
+  "home": {
+    "subtitle": "Colección 2026",
+    "heading": "Joyería con carácter",
+    "description": "Página base de Angular para migrar contenido del marcado heredado.",
+    "cta": "Ver catálogo"
+  },
+  "catalog": {
+    "subtitle": "Sección de productos",
+    "heading": "Catálogo de joyería",
+    "description": "Esta es una versión inicial del catálogo. Después añadiremos filtros, tarjetas y paginación.",
+    "items": {
+      "ring": "Anillos",
+      "earrings": "Pendientes",
+      "bracelet": "Pulseras"
+    }
+  },
+  "login": {
+    "subtitle": "Área personal",
+    "heading": "Iniciar sesión",
+    "email": "Correo",
+    "password": "Contraseña",
+    "submit": "Entrar"
+  }
+}
