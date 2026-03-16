@@ -1,24 +1,55 @@
-<section class="page-card">
-  <p class="kicker">{{ 'catalog.subtitle' | translate }}</p>
-  <h1>{{ 'catalog.heading' | translate }}</h1>
-  <p>{{ 'catalog.description' | translate }}</p>
+<section class="hero hero--catalog">
+  <div class="wrapper">
+    <h1>{{ 'catalog.heroTitle' | translate }}</h1>
+    <p>{{ 'catalog.heroSubtitle' | translate }}</p>
+  </div>
 </section>
 
-<div class="catalog-layout">
-  <aside class="page-card filters">
-    <h2>{{ 'catalog.filters.title' | translate }}</h2>
-    <ul>
-      <li *ngFor="let filterKey of filterKeys">{{ filterKey | translate }}</li>
-    </ul>
-  </aside>
+<section class="catalog wrapper catalog--no-js">
+  <button class="catalog__button catalog__button--toggle-filter button" type="button">
+    {{ 'catalog.filters.title' | translate }}
+  </button>
 
-  <section class="catalog-grid">
-    <article class="page-card product" *ngFor="let item of items">
-      <p class="kicker" *ngIf="item.isNew">{{ 'catalog.badgeNew' | translate }}</p>
+  <div class="catalog__filter filter">
+    <form class="filter__form" method="get">
+      <div class="filter__control filter__control--active">
+        <button class="filter__button filter__button--options button" type="button">{{ 'catalog.filters.category' | translate }}</button>
+      </div>
+      <div class="filter__control">
+        <button class="filter__button filter__button--options button" type="button">{{ 'catalog.filters.material' | translate }}</button>
+      </div>
+      <div class="filter__control">
+        <button class="filter__button filter__button--options button" type="button">{{ 'catalog.filters.collection' | translate }}</button>
+      </div>
+      <div class="filter__control filter__control--active">
+        <button class="filter__button filter__button--options button" type="button">{{ 'catalog.filters.price' | translate }}</button>
+      </div>
+
+      <button class="filter__button filter__button--show button" type="button">{{ 'catalog.filters.apply' | translate }}</button>
+      <button class="filter__button filter__button--clear button" type="button">{{ 'catalog.filters.clear' | translate }}</button>
+    </form>
+  </div>
+
+  <section class="catalog__results results">
+    <h2 class="visually-hidden">{{ 'catalog.heading' | translate }}</h2>
+
+    <article class="results__item" *ngFor="let item of items">
+      <a href="#">
+        <div class="results__img"></div>
+      </a>
       <h3>{{ item.nameKey | translate }}</h3>
-      <p>{{ item.materialKey | translate }}</p>
-      <p class="price">{{ item.price | currency : 'USD' : 'symbol' : '1.0-0' }}</p>
-      <button type="button" (click)="addToCart()">{{ 'catalog.actions.addToCart' | translate }}</button>
+      <p>{{ item.price | currency : 'USD' : 'symbol' : '1.0-0' }}</p>
+      <button class="button" type="button" (click)="addToCart()">{{ 'catalog.actions.addToCart' | translate }}</button>
     </article>
+
+    <div class="results__pagination">
+      <button class="results__button button" type="button">{{ 'catalog.pagination.prev' | translate }}</button>
+      <ul class="results__pages-number">
+        <li class="results__page-number results__page-number--active"><a href="#">1</a></li>
+        <li class="results__page-number"><a href="#">2</a></li>
+        <li class="results__page-number"><a href="#">3</a></li>
+      </ul>
+      <button class="results__button button" type="button">{{ 'catalog.pagination.next' | translate }}</button>
+    </div>
   </section>
-</div>
+</section>

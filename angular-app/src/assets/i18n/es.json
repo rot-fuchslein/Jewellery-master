@@ -14,7 +14,19 @@
     "description": "Página base de Angular para migrar contenido del marcado heredado.",
     "cta": "Ver catálogo",
     "secondaryCta": "Área personal",
-    "categoriesTitle": "Categorías populares"
+    "categoriesTitle": "Categorías populares",
+    "heroTitle": "PERFECCIÓN",
+    "heroSubtitle": "hecho para ti",
+    "latest": {
+      "title": "Novedades",
+      "link": "Comprar ahora",
+      "items": {
+        "moon": "Anillo Moon",
+        "choker": "Choker Gold",
+        "necklace": "Collar Silver",
+        "ring": "Anillo Crystal"
+      }
+    }
   },
   "catalog": {
     "subtitle": "Sección de productos",
@@ -31,7 +43,13 @@
       "title": "Filtros",
       "new": "Novedades",
       "available": "En stock",
-      "sale": "Ofertas"
+      "sale": "Ofertas",
+      "category": "Categoría",
+      "material": "Material",
+      "collection": "Colección",
+      "price": "Precio",
+      "apply": "Aplicar",
+      "clear": "Limpiar"
     },
     "actions": {
       "addToCart": "Añadir al carrito"
@@ -53,6 +71,12 @@
         "name": "Collar Silver",
         "material": "Plata"
       }
+    },
+    "heroTitle": "Catálogo",
+    "heroSubtitle": "Desde piezas clásicas hasta acentos modernos",
+    "pagination": {
+      "prev": "Anterior",
+      "next": "Siguiente"
     }
   },
   "login": {
@@ -63,7 +87,8 @@
     "forgot": "¿Olvidaste tu contraseña?",
     "submit": "Entrar",
     "registerPrompt": "¿No tienes cuenta?",
-    "registerLink": "Regístrate"
+    "registerLink": "Regístrate",
+    "emailPlaceholder": "Tu E-mail"
   },
   "cart": {
     "label": "Carrito"

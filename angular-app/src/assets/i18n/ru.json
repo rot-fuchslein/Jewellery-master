@@ -14,7 +14,19 @@
     "description": "Базовая страница Angular-приложения для переноса контента из старой верстки.",
     "cta": "Смотреть каталог",
     "secondaryCta": "Личный кабинет",
-    "categoriesTitle": "Популярные категории"
+    "categoriesTitle": "Популярные категории",
+    "heroTitle": "PERFECTION",
+    "heroSubtitle": "создано для вас",
+    "latest": {
+      "title": "Новинки",
+      "link": "Смотреть каталог",
+      "items": {
+        "moon": "Кольцо Moon",
+        "choker": "Чокер Gold",
+        "necklace": "Колье Silver",
+        "ring": "Кольцо Crystal"
+      }
+    }
   },
   "catalog": {
     "subtitle": "Раздел товаров",
@@ -31,7 +43,13 @@
       "title": "Фильтры",
       "new": "Новые поступления",
       "available": "В наличии",
-      "sale": "Скидки"
+      "sale": "Скидки",
+      "category": "Категория",
+      "material": "Материал",
+      "collection": "Коллекция",
+      "price": "Цена",
+      "apply": "Показать",
+      "clear": "Очистить"
     },
     "actions": {
       "addToCart": "В корзину"
@@ -53,6 +71,12 @@
         "name": "Колье Silver",
         "material": "Серебро"
       }
+    },
+    "heroTitle": "Каталог украшений",
+    "heroSubtitle": "От классики до современных акцентов",
+    "pagination": {
+      "prev": "Назад",
+      "next": "Вперед"
     }
   },
   "login": {
@@ -63,7 +87,8 @@
     "forgot": "Забыли пароль?",
     "submit": "Войти",
     "registerPrompt": "Нет аккаунта?",
-    "registerLink": "Зарегистрироваться"
+    "registerLink": "Зарегистрироваться",
+    "emailPlaceholder": "Ваш E-mail"
   },
   "cart": {
     "label": "Корзина"

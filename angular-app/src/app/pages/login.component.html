@@ -1,22 +1,38 @@
-<section class="page-card auth-card">
-  <p class="kicker">{{ 'login.subtitle' | translate }}</p>
-  <h1>{{ 'login.heading' | translate }}</h1>
+<section class="login wrapper">
+  <h1 class="visually-hidden">{{ 'login.heading' | translate }}</h1>
 
-  <form class="form" (submit)="$event.preventDefault()">
-    <label>
-      <span>{{ 'login.email' | translate }}</span>
-      <input type="email" [(ngModel)]="email" name="email" placeholder="email@example.com" />
-    </label>
+  <form class="login__form form" (submit)="$event.preventDefault()" method="post">
+    <button class="form__button button form__button--close" aria-label="Close form" type="button"></button>
+    <h2>{{ 'login.heading' | translate }}</h2>
 
-    <label>
-      <span>{{ 'login.password' | translate }}</span>
-      <input type="password" [(ngModel)]="password" name="password" />
-    </label>
+    <fieldset>
+      <div class="form__field">
+        <label aria-label="Your email">
+          <input
+            id="user-email"
+            type="email"
+            name="user-email"
+            [placeholder]="'login.emailPlaceholder' | translate"
+            [(ngModel)]="email"
+          />
+        </label>
+      </div>
 
-    <a class="link" href="#">{{ 'login.forgot' | translate }}</a>
+      <div class="form__field">
+        <label aria-label="Your password">
+          <input
+            id="user-password"
+            type="password"
+            name="user-password"
+            [placeholder]="'login.password' | translate"
+            [(ngModel)]="password"
+          />
+        </label>
+        <a href="#">{{ 'login.forgot' | translate }}</a>
+      </div>
+    </fieldset>
 
-    <button type="submit">{{ 'login.submit' | translate }}</button>
-
-    <p class="hint">{{ 'login.registerPrompt' | translate }} <a class="link" href="#">{{ 'login.registerLink' | translate }}</a></p>
+    <button class="form__button button form__button--login" type="submit">{{ 'login.submit' | translate }}</button>
+    <p>{{ 'login.registerPrompt' | translate }} <a href="#">{{ 'login.registerLink' | translate }}</a></p>
   </form>
 </section>

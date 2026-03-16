@@ -6,9 +6,7 @@ import { CartService } from '../services/cart.service';
 
 interface CatalogItem {
   nameKey: string;
-  materialKey: string;
   price: number;
-  isNew: boolean;
 }
 
 @Component({
@@ -19,13 +17,13 @@ interface CatalogItem {
   styleUrl: './page.scss'
 })
 export class CatalogComponent {
-  readonly filterKeys = ['catalog.filters.new', 'catalog.filters.available', 'catalog.filters.sale'];
-
   readonly items: CatalogItem[] = [
-    { nameKey: 'catalog.products.moonRing.name', materialKey: 'catalog.products.moonRing.material', price: 120, isNew: true },
-    { nameKey: 'catalog.products.pearlEarrings.name', materialKey: 'catalog.products.pearlEarrings.material', price: 95, isNew: false },
-    { nameKey: 'catalog.products.minimalBracelet.name', materialKey: 'catalog.products.minimalBracelet.material', price: 140, isNew: true },
-    { nameKey: 'catalog.products.silverNecklace.name', materialKey: 'catalog.products.silverNecklace.material', price: 160, isNew: false }
+    { nameKey: 'catalog.products.moonRing.name', price: 115 },
+    { nameKey: 'catalog.products.pearlEarrings.name', price: 95 },
+    { nameKey: 'catalog.products.minimalBracelet.name', price: 155 },
+    { nameKey: 'catalog.products.silverNecklace.name', price: 125 },
+    { nameKey: 'catalog.products.moonRing.name', price: 145 },
+    { nameKey: 'catalog.products.pearlEarrings.name', price: 75 }
   ];
 
   constructor(private readonly cartService: CartService) {}

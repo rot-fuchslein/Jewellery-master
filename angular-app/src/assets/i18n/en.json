@@ -14,7 +14,19 @@
     "description": "Base Angular app page for porting content from the legacy markup.",
     "cta": "Browse catalog",
     "secondaryCta": "Open account",
-    "categoriesTitle": "Popular categories"
+    "categoriesTitle": "Popular categories",
+    "heroTitle": "PERFECTION",
+    "heroSubtitle": "made to be yours",
+    "latest": {
+      "title": "New In",
+      "link": "Shop Now",
+      "items": {
+        "moon": "Moon Ring",
+        "choker": "Gold Choker",
+        "necklace": "Silver Necklace",
+        "ring": "Crystal Ring"
+      }
+    }
   },
   "catalog": {
     "subtitle": "Product section",
@@ -31,7 +43,13 @@
       "title": "Filters",
       "new": "New arrivals",
       "available": "In stock",
-      "sale": "On sale"
+      "sale": "On sale",
+      "category": "Category",
+      "material": "Material",
+      "collection": "Collection",
+      "price": "Price",
+      "apply": "Apply",
+      "clear": "Clear"
     },
     "actions": {
       "addToCart": "Add to cart"
@@ -53,6 +71,12 @@
         "name": "Silver Necklace",
         "material": "Silver"
       }
+    },
+    "heroTitle": "Catalog",
+    "heroSubtitle": "From classic pieces to modern accents",
+    "pagination": {
+      "prev": "Previous",
+      "next": "Next"
     }
   },
   "login": {
@@ -63,7 +87,8 @@
     "forgot": "Forgot your password?",
     "submit": "Sign in",
     "registerPrompt": "Don’t have an account?",
-    "registerLink": "Sign up"
+    "registerLink": "Sign up",
+    "emailPlaceholder": "Your E-mail"
   },
   "cart": {
     "label": "Cart"
