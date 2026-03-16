@@ -1,0 +1,68 @@
+{
+  "app": {
+    "title": "Jewellery Store",
+    "language": "Language"
+  },
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "login": "Login"
+  },
+  "home": {
+    "subtitle": "Collection 2026",
+    "heading": "Jewellery with character",
+    "description": "Base Angular app page for porting content from the legacy markup.",
+    "cta": "Browse catalog",
+    "secondaryCta": "Open account",
+    "categoriesTitle": "Popular categories"
+  },
+  "catalog": {
+    "subtitle": "Product section",
+    "heading": "Jewellery catalog",
+    "description": "Starter catalog layout with cards and filter sidebar.",
+    "badgeNew": "New",
+    "items": {
+      "ring": "Rings",
+      "earrings": "Earrings",
+      "bracelet": "Bracelets",
+      "necklace": "Necklaces"
+    },
+    "filters": {
+      "title": "Filters",
+      "new": "New arrivals",
+      "available": "In stock",
+      "sale": "On sale"
+    },
+    "actions": {
+      "addToCart": "Add to cart"
+    },
+    "products": {
+      "moonRing": {
+        "name": "Moon Ring",
+        "material": "Gold, diamonds"
+      },
+      "pearlEarrings": {
+        "name": "Pearl Earrings",
+        "material": "Silver, pearls"
+      },
+      "minimalBracelet": {
+        "name": "Minimal Bracelet",
+        "material": "White gold"
+      },
+      "silverNecklace": {
+        "name": "Silver Necklace",
+        "material": "Silver"
+      }
+    }
+  },
+  "login": {
+    "subtitle": "Account area",
+    "heading": "Sign in",
+    "email": "Email",
+    "password": "Password",
+    "forgot": "Forgot your password?",
+    "submit": "Sign in",
+    "registerPrompt": "Don’t have an account?",
+    "registerLink": "Sign up"
+  }
+}

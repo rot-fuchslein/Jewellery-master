@@ -1,0 +1,68 @@
+{
+  "app": {
+    "title": "Tienda de Joyería",
+    "language": "Idioma"
+  },
+  "nav": {
+    "home": "Inicio",
+    "catalog": "Catálogo",
+    "login": "Acceso"
+  },
+  "home": {
+    "subtitle": "Colección 2026",
+    "heading": "Joyería con carácter",
+    "description": "Página base de Angular para migrar contenido del marcado heredado.",
+    "cta": "Ver catálogo",
+    "secondaryCta": "Área personal",
+    "categoriesTitle": "Categorías populares"
+  },
+  "catalog": {
+    "subtitle": "Sección de productos",
+    "heading": "Catálogo de joyería",
+    "description": "Diseño inicial del catálogo con tarjetas de producto y panel lateral de filtros.",
+    "badgeNew": "Nuevo",
+    "items": {
+      "ring": "Anillos",
+      "earrings": "Pendientes",
+      "bracelet": "Pulseras",
+      "necklace": "Collares"
+    },
+    "filters": {
+      "title": "Filtros",
+      "new": "Novedades",
+      "available": "En stock",
+      "sale": "Ofertas"
+    },
+    "actions": {
+      "addToCart": "Añadir al carrito"
+    },
+    "products": {
+      "moonRing": {
+        "name": "Anillo Moon",
+        "material": "Oro, diamantes"
+      },
+      "pearlEarrings": {
+        "name": "Pendientes Pearl",
+        "material": "Plata, perlas"
+      },
+      "minimalBracelet": {
+        "name": "Pulsera Minimal",
+        "material": "Oro blanco"
+      },
+      "silverNecklace": {
+        "name": "Collar Silver",
+        "material": "Plata"
+      }
+    }
+  },
+  "login": {
+    "subtitle": "Área personal",
+    "heading": "Iniciar sesión",
+    "email": "Correo",
+    "password": "Contraseña",
+    "forgot": "¿Olvidaste tu contraseña?",
+    "submit": "Entrar",
+    "registerPrompt": "¿No tienes cuenta?",
+    "registerLink": "Regístrate"
+  }
+}

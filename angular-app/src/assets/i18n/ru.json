@@ -1,0 +1,68 @@
+{
+  "app": {
+    "title": "Ювелирный магазин",
+    "language": "Язык"
+  },
+  "nav": {
+    "home": "Главная",
+    "catalog": "Каталог",
+    "login": "Вход"
+  },
+  "home": {
+    "subtitle": "Коллекция 2026",
+    "heading": "Украшения с характером",
+    "description": "Базовая страница Angular-приложения для переноса контента из старой верстки.",
+    "cta": "Смотреть каталог",
+    "secondaryCta": "Личный кабинет",
+    "categoriesTitle": "Популярные категории"
+  },
+  "catalog": {
+    "subtitle": "Раздел товаров",
+    "heading": "Каталог украшений",
+    "description": "Стартовый макет каталога с карточками товаров и боковой панелью фильтров.",
+    "badgeNew": "Новинка",
+    "items": {
+      "ring": "Кольца",
+      "earrings": "Серьги",
+      "bracelet": "Браслеты",
+      "necklace": "Колье"
+    },
+    "filters": {
+      "title": "Фильтры",
+      "new": "Новые поступления",
+      "available": "В наличии",
+      "sale": "Скидки"
+    },
+    "actions": {
+      "addToCart": "В корзину"
+    },
+    "products": {
+      "moonRing": {
+        "name": "Кольцо Moon",
+        "material": "Золото, бриллианты"
+      },
+      "pearlEarrings": {
+        "name": "Серьги Pearl",
+        "material": "Серебро, жемчуг"
+      },
+      "minimalBracelet": {
+        "name": "Браслет Minimal",
+        "material": "Белое золото"
+      },
+      "silverNecklace": {
+        "name": "Колье Silver",
+        "material": "Серебро"
+      }
+    }
+  },
+  "login": {
+    "subtitle": "Личный кабинет",
+    "heading": "Вход в аккаунт",
+    "email": "Email",
+    "password": "Пароль",
+    "forgot": "Забыли пароль?",
+    "submit": "Войти",
+    "registerPrompt": "Нет аккаунта?",
+    "registerLink": "Зарегистрироваться"
+  }
+}

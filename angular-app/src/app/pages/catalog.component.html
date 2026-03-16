@@ -1,0 +1,24 @@
+<section class="page-card">
+  <p class="kicker">{{ 'catalog.subtitle' | translate }}</p>
+  <h1>{{ 'catalog.heading' | translate }}</h1>
+  <p>{{ 'catalog.description' | translate }}</p>
+</section>
+
+<div class="catalog-layout">
+  <aside class="page-card filters">
+    <h2>{{ 'catalog.filters.title' | translate }}</h2>
+    <ul>
+      <li *ngFor="let filterKey of filterKeys">{{ filterKey | translate }}</li>
+    </ul>
+  </aside>
+
+  <section class="catalog-grid">
+    <article class="page-card product" *ngFor="let item of items">
+      <p class="kicker" *ngIf="item.isNew">{{ 'catalog.badgeNew' | translate }}</p>
+      <h3>{{ item.nameKey | translate }}</h3>
+      <p>{{ item.materialKey | translate }}</p>
+      <p class="price">{{ item.price | currency : 'USD' : 'symbol' : '1.0-0' }}</p>
+      <button type="button">{{ 'catalog.actions.addToCart' | translate }}</button>
+    </article>
+  </section>
+</div>
